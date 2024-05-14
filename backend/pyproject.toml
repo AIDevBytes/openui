@@ -9,6 +9,10 @@ dependencies = [
     "uvicorn>=0.25.0",
     "fastapi-sso>=0.13.0",
     "boto3>=1.34.67",
+    "Pillow>=8.3.1",
+    "playwright>=1.41.0",
+    "beautifulsoup4>=4.0.0",
+    "mistletoe>=1.0.0",
 ]
 name = "openui"
 version = "0.3"
@@ -36,9 +40,6 @@ CI = "https://github.com/wandb/openui/actions"
 [project.optional-dependencies]
 test = ["pytest", "pre-commit"]
 eval = [
-    "Pillow>=8.3.1",
-    "playwright>=1.41.0",
-    "beautifulsoup4>=4.0.0",
-    "mistletoe>=1.0.0",
+    
 ]
 tui = ["textual[syntax]>=0.49.0", "pyperclip>=1.8.2"]
